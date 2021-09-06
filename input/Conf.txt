@@ -1,0 +1,17 @@
+# here, '#' indicates current line a remark line. The file uses the format of "key=value" to store informations.
+#rayFile: a file that contains the path coordinates of satelites and stations
+rayFile=input\rays\EUREF_2015-03-15-00-00-00.stec
+#outPath: the path where to output the results
+outPath=output
+#VoxModel: define the curvilinear voxel model, the radius of the earth is set to be 6371000m. Each line bellow is a new voxel model.
+#       id  minLon(Degree)  minLat(Degree)  minH(KM)  maxLon(Degree)  maxLat(Degree)  maxH(KM)  resLon(Degree)  resLat(Degree)  resH(KM)
+VoxModel=0  -10  10  100  50  70  2100  2  2  100
+VoxModel=1  -10  10  100  50  70  2100  1  2  100
+VoxModel=2  -10  10  100  50  70  2100  1  1  100
+VoxModel=3  -10  10  100  50  70  2100  1  1  50
+VoxModel=4  -10  10  100  50  70  2100  0.5  1  50
+VoxModel=5  -10  10  100  50  70  2100  0.5  0.5  50
+VoxModel=6  -10  10  100  50  70  2100  0.5  0.5  25
+VoxModel=7  -10  10  100  50  70  2100  0.25  0.5  25
+VoxModel=8  -10  10  100  50  70  2100  0.25  0.25  25
+VoxModel=9  -10  10  100  50  70  2100  0.25  0.25  12.5
